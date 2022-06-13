@@ -1,0 +1,45 @@
+env:
+  TERM: xterm-256color
+
+font:
+  size: 14.0
+  use_thin_strokes: true
+  normal:
+    family: MesloLGS NF
+  offset:
+    y: 4
+
+window:
+  decorations: buttonless
+  padding:
+    x: 6
+    y: 6 
+
+key_bindings:
+    - { key: Key3,     mods: Alt,              chars: '#' }
+
+colors:
+  # Default colors
+  primary:
+    foreground: '0xbbc2cf'
+    background: '0x282c34'
+
+  # Cursor colors
+  cursor:
+    text: '0x2c323c'
+
+  # Selection colors
+  selection:
+    text: CellForeground
+    background: '0x3e4452'
+
+  # Normal colors
+  bright:
+    black: '0x2c323c'
+    red: '0xec5f67'
+    green: '0x98be65'
+    yellow: '0xECBE7B'
+    blue: '0x51afef'
+    magenta: '0xc678dd'
+    cyan: '0x008080'
+    white: '0x5c6370'
