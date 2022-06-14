@@ -3,10 +3,12 @@
 
 *
 !.gitignore
-!.tmux.conf
+
 !alacritty
 !alacritty/*
 !nvim
 !nvim/*
 !nvim/lua/*
+!tmux
+!tmux/*
 
