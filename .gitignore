@@ -1,0 +1,12 @@
+**/.DS_Store
+**.log
+
+*
+!.gitignore
+!.tmux.conf
+!alacritty
+!alacritty/*
+!nvim
+!nvim/*
+!nvim/lua/*
+
