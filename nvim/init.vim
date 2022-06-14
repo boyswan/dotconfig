@@ -19,6 +19,7 @@ set cmdheight=1
 set noshowmode
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
+set laststatus=3
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
@@ -34,6 +35,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'nvim-lua/lsp-status.nvim'
+Plug 'akinsho/bufferline.nvim'
 
 Plug 'prettier/vim-prettier'
 Plug 'christoomey/vim-tmux-navigator'
