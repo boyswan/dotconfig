@@ -14,7 +14,8 @@ set undofile
 set incsearch
 set termguicolors
 set scrolloff=8
-set signcolumn=number
+set signcolumn=yes
+set number 
 set cmdheight=1
 set noshowmode
 set completeopt=menuone,noinsert,noselect
@@ -42,6 +43,10 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
+
+Plug 'rescript-lang/vim-rescript'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nkrkv/nvim-treesitter-rescript'
 
 call plug#end()
 
