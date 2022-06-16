@@ -36,6 +36,8 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'nvim-lua/lsp-status.nvim'
+Plug 'simrat39/rust-tools.nvim'
+
 Plug 'akinsho/bufferline.nvim'
 
 Plug 'prettier/vim-prettier'
@@ -53,6 +55,8 @@ call plug#end()
 colorscheme onedark
 
 let mapleader=" "
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 
 command! Q :q
 command! X :x
