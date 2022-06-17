@@ -37,7 +37,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'nvim-lua/lsp-status.nvim'
 Plug 'akinsho/bufferline.nvim'
-
+Plug 'romainl/vim-cool'
 Plug 'prettier/vim-prettier'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -59,6 +59,7 @@ let g:netrw_banner = 0
 
 command! Q :q
 command! X :x
+command! W :w
 
 
 lua << EOF
