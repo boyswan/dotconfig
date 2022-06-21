@@ -49,7 +49,8 @@ Plug 'numToStr/Comment.nvim'
 Plug 'rescript-lang/vim-rescript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nkrkv/nvim-treesitter-rescript'
-
+Plug 'nvim-neo-tree/neo-tree.nvim'
+Plug 'MunifTanjim/nui.nvim'
 call plug#end()
 
 colorscheme onedark
