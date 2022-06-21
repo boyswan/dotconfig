@@ -16,7 +16,7 @@ set termguicolors
 set scrolloff=8
 set signcolumn=yes
 set number 
-set cmdheight=1
+set cmdheight=0
 set noshowmode
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
@@ -25,10 +25,6 @@ set laststatus=3
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'joshdick/onedark.vim'
-Plug 'ntk148v/vim-horizon'
-Plug 'junegunn/seoul256.vim'
-Plug 'liuchengxu/space-vim-dark'
-
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-lualine/lualine.nvim'
@@ -57,9 +53,10 @@ Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'MunifTanjim/nui.nvim'
 call plug#end()
 
-" colorscheme onedark
-" let g:space_vim_dark_background = 234
-colorscheme space-vim-dark
+let g:onedark_color_overrides = {
+\ "background": {"gui": "#18191B", "cterm": "235", "cterm16": "0" },
+\}
+colorscheme onedark
 
 let mapleader=" "
 let g:netrw_liststyle = 3

@@ -16,13 +16,13 @@ window:
     y: 4 
 
 key_bindings:
-    - { key: Key3,     mods: Alt,              chars: '#' }
+    - { key: Key3, mods: Alt, chars: '#' }
 
 colors:
   # Default colors
   primary:
     foreground: '0xbbc2cf'
-    background: '0x282c34'
+    background: '0x18191B'
 
   # Cursor colors
   cursor:
