@@ -51,10 +51,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nkrkv/nvim-treesitter-rescript'
 Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'MunifTanjim/nui.nvim'
+Plug 'matze/vim-move'
 call plug#end()
 
+
 let g:onedark_color_overrides = {
-\ "background": {"gui": "#18191B", "cterm": "235", "cterm16": "0" },
+\ "background": {"gui": "#0d1117", "cterm": "235", "cterm16": "0" },
 \}
 colorscheme onedark
 
@@ -63,6 +65,8 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:tpipeline_cursormoved = 1
 let g:tpipeline_fillcentre = 1
+let g:move_key_modifier = 'C'
+let g:move_key_modifier_visualmode = 'C'
 
 command! Q :q
 command! X :x

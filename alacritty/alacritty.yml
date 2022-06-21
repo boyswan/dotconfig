@@ -22,7 +22,7 @@ colors:
   # Default colors
   primary:
     foreground: '0xbbc2cf'
-    background: '0x18191B'
+    background: '0x0d1117'
 
   # Cursor colors
   cursor:
@@ -35,7 +35,7 @@ colors:
 
   # Normal colors
   bright:
-    black: '0x2c323c'
+    black: '0x8b949e'
     red: '0xec5f67'
     green: '0x98be65'
     yellow: '0xECBE7B'
