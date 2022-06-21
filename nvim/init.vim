@@ -44,7 +44,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'machakann/vim-sandwich'
-
+Plug 'j-hui/fidget.nvim'
 Plug 'rescript-lang/vim-rescript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nkrkv/nvim-treesitter-rescript'
