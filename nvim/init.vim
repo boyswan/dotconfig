@@ -25,6 +25,10 @@ set laststatus=3
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'joshdick/onedark.vim'
+Plug 'ntk148v/vim-horizon'
+Plug 'junegunn/seoul256.vim'
+Plug 'liuchengxu/space-vim-dark'
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-lualine/lualine.nvim'
@@ -53,7 +57,9 @@ Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'MunifTanjim/nui.nvim'
 call plug#end()
 
-colorscheme onedark
+" colorscheme onedark
+" let g:space_vim_dark_background = 234
+colorscheme space-vim-dark
 
 let mapleader=" "
 let g:netrw_liststyle = 3
