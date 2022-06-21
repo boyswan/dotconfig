@@ -12,8 +12,8 @@ font:
 window:
   decorations: buttonless
   padding:
-    x: 6
-    y: 6 
+    x: 4
+    y: 4 
 
 key_bindings:
     - { key: Key3,     mods: Alt,              chars: '#' }

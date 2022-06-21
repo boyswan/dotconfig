@@ -44,6 +44,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'machakann/vim-sandwich'
 Plug 'j-hui/fidget.nvim'
+Plug 'vimpostor/vim-tpipeline' 
 Plug 'numToStr/Comment.nvim'
 Plug 'rescript-lang/vim-rescript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -56,6 +57,8 @@ colorscheme onedark
 let mapleader=" "
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
+let g:tpipeline_cursormoved = 1
+let g:tpipeline_fillcentre = 1
 
 command! Q :q
 command! X :x
