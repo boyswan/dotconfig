@@ -24,7 +24,7 @@ set laststatus=3
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
-Plug 'joshdick/onedark.vim'
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-lualine/lualine.nvim'
@@ -54,23 +54,19 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'matze/vim-move'
 call plug#end()
 
-
-let g:onedark_color_overrides = {
-\ "background": {"gui": "#0d1117", "cterm": "235", "cterm16": "0" },
-\}
-colorscheme onedark
-
 let mapleader=" "
 let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:tpipeline_cursormoved = 1
 let g:tpipeline_fillcentre = 1
 let g:move_key_modifier_visualmode = 'C'
+let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
+
+colorscheme catppuccin
 
 command! Q :q
 command! X :x
 command! W :w
-
 
 lua << EOF
 require("lsp")

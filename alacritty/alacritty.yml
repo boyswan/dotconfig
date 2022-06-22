@@ -21,8 +21,8 @@ key_bindings:
 colors:
   # Default colors
   primary:
-    foreground: '0xbbc2cf'
-    background: '0x0d1117'
+    foreground: '0xDEDDF0'
+    background: '0x1E1D2D'
 
   # Cursor colors
   cursor:
@@ -36,10 +36,10 @@ colors:
   # Normal colors
   bright:
     black: '0x8b949e'
-    red: '0xec5f67'
-    green: '0x98be65'
-    yellow: '0xECBE7B'
-    blue: '0x51afef'
-    magenta: '0xc678dd'
-    cyan: '0x008080'
+    red: '0xF08FA9'
+    green: '0xACE5AB'
+    yellow: '0xF0DEAA'
+    blue: '0x98BBF5'
+    magenta: '0xF2CDCD'
+    cyan: '0x89DCEB'
     white: '0x5c6370'
