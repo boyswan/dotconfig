@@ -3,8 +3,8 @@ set rnu
 set hidden
 set noerrorbells
 set nowrap
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=2 softtabstop=2
+set shiftwidth=2
 set expandtab
 set nowrap
 set noswapfile
@@ -40,7 +40,6 @@ Plug 'romainl/vim-cool'
 Plug 'prettier/vim-prettier'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'machakann/vim-sandwich'
 Plug 'j-hui/fidget.nvim'
@@ -49,9 +48,9 @@ Plug 'numToStr/Comment.nvim'
 Plug 'rescript-lang/vim-rescript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nkrkv/nvim-treesitter-rescript'
-Plug 'nvim-neo-tree/neo-tree.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'matze/vim-move'
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 let mapleader=" "

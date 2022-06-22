@@ -7,13 +7,13 @@
 require('gitsigns').setup()
 
 require("bufferline").setup{
-  options = {
-  },
-  highlights = {
-    buffer_selected = {
-      gui = "none"
+    options = {
     },
-  },
+    highlights = {
+        buffer_selected = {
+            gui = "none"
+        },
+    },
 }
 
 local opt = { silent = true }
@@ -23,4 +23,4 @@ vim.api.nvim_set_keymap('n', '<leader>3','<cmd>BufferLineGoToBuffer 3<cr>', opt)
 vim.api.nvim_set_keymap('n', '<leader>4','<cmd>BufferLineGoToBuffer 4<cr>', opt)
 
 require('Comment').setup()
-require("neo-tree").setup()
+
