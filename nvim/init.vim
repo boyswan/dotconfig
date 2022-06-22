@@ -8,7 +8,7 @@ set shiftwidth=4
 set expandtab
 set nowrap
 set noswapfile
-set nobackup
+set nobackup 
 set undodir=~/.vim/undodir 
 set undofile
 set incsearch
@@ -65,7 +65,6 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:tpipeline_cursormoved = 1
 let g:tpipeline_fillcentre = 1
-let g:move_key_modifier = 'C'
 let g:move_key_modifier_visualmode = 'C'
 
 command! Q :q
