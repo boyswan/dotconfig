@@ -21,6 +21,9 @@ set noshowmode
 set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 set laststatus=3
+set formatoptions-=cro
+set ignorecase
+set smartcase 
 
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-fugitive'
@@ -51,6 +54,8 @@ Plug 'nkrkv/nvim-treesitter-rescript'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'matze/vim-move'
 Plug 'tpope/vim-vinegar'
+Plug 'folke/trouble.nvim'
+Plug 'sindrets/diffview.nvim'
 call plug#end()
 
 let mapleader=" "
