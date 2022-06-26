@@ -56,6 +56,7 @@ Plug 'matze/vim-move'
 Plug 'tpope/vim-vinegar'
 Plug 'folke/trouble.nvim'
 Plug 'sindrets/diffview.nvim'
+Plug 'phaazon/hop.nvim'
 call plug#end()
 
 let mapleader=" "
