@@ -23,4 +23,4 @@ vim.api.nvim_set_keymap('n', '<leader>qd','<cmd>TroubleToggle document_diagnosti
 vim.api.nvim_set_keymap('n', '<leader>qw','<cmd>TroubleToggle workspace_diagnostics<cr>', opt)
 
 require('hop').setup { keys = 'etovxqpdygfblzhckisuran', jump_on_sole_occurrence = false }
-vim.api.nvim_set_keymap('n', '<leader>s', '<cmd>HopChar2<cr>', opt)
+vim.api.nvim_set_keymap('n', 'fa', '<cmd>HopChar2<cr>', opt)
