@@ -73,6 +73,13 @@ command! Q :q
 command! X :x
 command! W :w
 
+
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#232333 ctermbg=234
+
 lua << EOF
 require("lsp")
 require("keymaps")
