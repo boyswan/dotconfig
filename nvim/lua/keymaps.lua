@@ -15,6 +15,8 @@ keymap("n", "<leader>l", "<cmd>:bnext<cr>")
 keymap("n", "<leader>h", "<cmd>:bprev<cr>")
 keymap("n", "<leader>w", "<cmd>:bd<cr>")
 keymap("n", "<leader>e", "<cmd>E<cr><cr>")
+keymap("n", "<leader>i", "<cmd>sp<cr><cr>")
+keymap("n", "<leader>o", "<cmd>vsp<cr><cr>")
 
 vim.cmd[[set omnifunc=rescript#Complete]]
 vim.cmd[[set completeopt+=preview]]
