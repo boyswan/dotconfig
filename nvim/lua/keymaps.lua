@@ -10,6 +10,7 @@ keymap("n", "<leader>fi", "<cmd>lua require'telescope.builtin'.git_files(require
 keymap("n", "<leader>fe", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>")
 keymap("n", "<leader>fl", "<cmd>lua require'telescope.builtin'.live_grep(require('telescope.themes').get_dropdown({ previewer = false }))<cr>")
 keymap("i", "jk", "<esc>")
+keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
 keymap("n", "<leader>l", "<cmd>:bnext<cr>")
 keymap("n", "<leader>h", "<cmd>:bprev<cr>")

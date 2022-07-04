@@ -57,6 +57,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'folke/trouble.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'phaazon/hop.nvim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 call plug#end()
 
 let mapleader=" "
