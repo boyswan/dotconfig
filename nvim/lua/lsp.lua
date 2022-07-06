@@ -38,8 +38,8 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 vim.diagnostic.config({
   virtual_text = true,
   signs = true,
-  underline = true,
-  update_in_insert = true,
+  underline = false,
+  update_in_insert = false,
   severity_sort = true,
 })
 -- Use a loop to conveniently call 'setup' on multiple servers and

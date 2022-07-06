@@ -19,7 +19,7 @@ vim.api.nvim_set_keymap('n', '<leader>5','<cmd>BufferLineGoToBuffer 5<cr>', opt)
 
 require('Comment').setup()
 require("trouble").setup()
-vim.api.nvim_set_keymap('n', '<leader>qd','<cmd>TroubleToggle document_diagnostics<cr>', opt)
+vim.api.nvim_set_keymap('n', '<leader>q','<cmd>TroubleToggle document_diagnostics<cr>', opt)
 vim.api.nvim_set_keymap('n', '<leader>qw','<cmd>TroubleToggle workspace_diagnostics<cr>', opt)
 
 require('hop').setup { keys = 'etovxqpdygfblzhckisuran', jump_on_sole_occurrence = false }
