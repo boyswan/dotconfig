@@ -26,7 +26,6 @@ set ignorecase
 set smartcase 
 
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-fugitive'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'

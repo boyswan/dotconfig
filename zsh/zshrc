@@ -10,6 +10,8 @@ plugins=(git)
 alias python=/usr/local/bin/python3
 alias dc="docker-compose"
 alias vim="nvim"
+alias v="nvim"
+alias gs="git status"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
