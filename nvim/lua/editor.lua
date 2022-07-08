@@ -5,7 +5,7 @@ require("bufferline").setup{
     },
     highlights = {
         buffer_selected = {
-            gui = "none"
+            gui = "NONE"
         },
     },
 }
@@ -68,4 +68,11 @@ vim.cmd[[hi NeoTreeRootName guifg=#98BBF5 gui=NONE]]
 vim.cmd[[hi NeoTreeNormal guibg=#181825]]
 vim.cmd[[hi NeoTreeNormalNC guibg=#181825]]
 vim.cmd[[hi NeoTreeSignColumn guibg=#181825]]
+
+vim.cmd[[hi TSParameter gui=NONE]]
+vim.cmd[[hi TSNamespace gui=NONE]]
+vim.cmd[[hi TSTagAttribute gui=NONE]]
+vim.cmd[[hi TSParameter gui=NONE]]
+vim.cmd[[hi TSConditional gui=NONE]]
+
 
