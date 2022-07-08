@@ -12,10 +12,12 @@ keymap("n", "<leader>fl", "<cmd>lua require'telescope.builtin'.live_grep()<cr>")
 keymap("i", "jk", "<esc>")
 keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
+
+
 keymap("n", "<leader>l", "<cmd>:bnext<cr>")
 keymap("n", "<leader>h", "<cmd>:bprev<cr>")
 keymap("n", "<leader>w", "<cmd>:bd<cr>")
-keymap("n", "<leader>e", "<cmd>E<cr><cr>")
+keymap("n", "<leader>e", "<cmd>NeoTreeRevealToggle<cr>")
 keymap("n", "<leader>i", "<cmd>sp<cr><cr>")
 keymap("n", "<leader>o", "<cmd>vsp<cr><cr>")
 

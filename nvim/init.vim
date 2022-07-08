@@ -24,6 +24,7 @@ set laststatus=3
 set formatoptions-=cro
 set ignorecase
 set smartcase 
+set splitright
 
 call plug#begin('~/.vim/plugged')
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
@@ -52,7 +53,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nkrkv/nvim-treesitter-rescript'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'matze/vim-move'
-Plug 'tpope/vim-vinegar'
+Plug 'nvim-neo-tree/neo-tree.nvim', {'branch':  'v2.x'}
 Plug 'folke/trouble.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'phaazon/hop.nvim'
@@ -66,6 +67,7 @@ let g:tpipeline_cursormoved = 1
 let g:tpipeline_fillcentre = 1
 let g:move_key_modifier_visualmode = 'C'
 let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
+let loaded_netrwPlugin = 1
 
 colorscheme catppuccin
 
