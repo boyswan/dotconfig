@@ -54,7 +54,6 @@ Plug 'nkrkv/nvim-treesitter-rescript'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'matze/vim-move'
 Plug 'nvim-neo-tree/neo-tree.nvim', {'branch':  'v2.x'}
-Plug 'folke/trouble.nvim'
 Plug 'sindrets/diffview.nvim'
 Plug 'phaazon/hop.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}

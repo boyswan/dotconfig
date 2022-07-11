@@ -9,6 +9,7 @@ end
 keymap("n", "<leader>fi", "<cmd>lua require'telescope.builtin'.git_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>")
 keymap("n", "<leader>fe", "<cmd>lua require'telescope.builtin'.find_files()<cr>")
 keymap("n", "<leader>fl", "<cmd>lua require'telescope.builtin'.live_grep()<cr>")
+keymap("n", "<leader>fs", "<cmd>lua require'telescope.builtin'.git_status()<cr>")
 keymap("i", "jk", "<esc>")
 keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
