@@ -57,6 +57,7 @@ Plug 'nvim-neo-tree/neo-tree.nvim', {'branch':  'v2.x'}
 Plug 'sindrets/diffview.nvim'
 Plug 'phaazon/hop.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'fannheyward/telescope-coc.nvim'
 call plug#end()
 
 let mapleader=" "

@@ -10,6 +10,8 @@ keymap("n", "<leader>fi", "<cmd>lua require'telescope.builtin'.git_files(require
 keymap("n", "<leader>fe", "<cmd>lua require'telescope.builtin'.find_files()<cr>")
 keymap("n", "<leader>fl", "<cmd>lua require'telescope.builtin'.live_grep()<cr>")
 keymap("n", "<leader>fs", "<cmd>lua require'telescope.builtin'.git_status()<cr>")
+keymap("n", "<leader>fd", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>")
+
 keymap("i", "jk", "<esc>")
 keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
@@ -28,7 +30,8 @@ vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>f :Rescrip
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>k :RescriptTypeHint<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> gd :RescriptJumpToDefinition<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>b :RescriptBuild<CR>]]
-
+vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fd :Telescope coc diagnostics<CR>]]
+vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fdw :Telescope coc workspace_diagnostics<CR>]]
 
 
 
