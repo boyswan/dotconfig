@@ -42,6 +42,13 @@ vim.diagnostic.config({
   update_in_insert = false,
   severity_sort = true,
 })
+
+vim.diagnostic.config({
+  float = {
+    border = "single"
+  },
+})
+
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 

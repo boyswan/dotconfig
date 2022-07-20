@@ -15,13 +15,14 @@ keymap("n", "<leader>fd", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>
 keymap("i", "jk", "<esc>")
 keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
+vim.cmd[[nnoremap <silent> <leader>k <cmd>lua vim.diagnostic.open_float()<CR>]]
 
 
 keymap("n", "<leader>l", "<cmd>:bnext<cr>")
 keymap("n", "<leader>h", "<cmd>:bprev<cr>")
 keymap("n", "<leader>w", "<cmd>:bd<cr>")
 keymap("n", "<leader>e", "<cmd>NeoTreeRevealToggle<cr>")
-keymap("n", "<leader>i", "<cmd>sp<cr><cr>")
+-- keymap("n", "<leader>i", "<cmd>sp<cr><cr>")
 keymap("n", "<leader>o", "<cmd>vsp<cr><cr>")
 
 vim.cmd[[set omnifunc=rescript#Complete]]
@@ -34,5 +35,6 @@ vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fd :Telesc
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fdw :Telescope coc workspace_diagnostics<CR>]]
 
 
-
+vim.cmd[[autocmd FileType css nnoremap <silent> <buffer> <leader>f :Prettier<CR>]]
+vim.cmd[[autocmd FileType javascript nnoremap <silent> <buffer> <leader>f :Prettier<CR>]]
 
