@@ -28,7 +28,7 @@ keymap("n", "<leader>o", "<cmd>vsp<cr><cr>")
 vim.cmd[[set omnifunc=rescript#Complete]]
 vim.cmd[[set completeopt+=preview]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>f :RescriptFormat<CR>]]
-vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>k :RescriptTypeHint<CR>]]
+vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <s-k> :RescriptTypeHint<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> gd :RescriptJumpToDefinition<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>b :RescriptBuild<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fd :Telescope coc diagnostics<CR>]]
