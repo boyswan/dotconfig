@@ -72,4 +72,19 @@ vim.cmd[[hi TSTagAttribute gui=NONE]]
 vim.cmd[[hi TSParameter gui=NONE]]
 vim.cmd[[hi TSConditional gui=NONE]]
 
+vim.cmd[[hi DiagnosticVirtualTextWarn guibg=#1E1D2D guifg=#F9C296]]
+vim.cmd[[hi DiagnosticVirtualTextError guibg=#1E1D2D guifg=#F08FA9]]
+vim.cmd[[hi DiagnosticVirtualTextInfo guibg=#1E1D2D guifg=#89DCEB]]
+vim.cmd[[hi DiagnosticVirtualTextHint guibg=#1E1D2D guifg=#ACE5AB]]
+
+vim.cmd[[hi DiagnosticWarn guibg=#1E1D2D guifg=#F9C296]]
+vim.cmd[[hi DiagnosticError guibg=#1E1D2D guifg=#F08FA9]]
+vim.cmd[[hi DiagnosticInfo guibg=#1E1D2D guifg=#89DCEB]]
+vim.cmd[[hi DiagnosticHint guibg=#1E1D2D guifg=#ACE5AB]]
+
+vim.cmd[[sign define DiagnosticSignError texthl=DiagnosticSignError text=]]
+vim.cmd[[sign define DiagnosticSignWarn texthl=DiagnosticSignWarn text=]]
+vim.cmd[[sign define DiagnosticSignHint texthl=DiagnosticSignHint text=]]
+vim.cmd[[sign define DiagnosticSignInfo texthl=DiagnosticSignInfo text=]]
+
 
