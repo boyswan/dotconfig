@@ -11,11 +11,11 @@ require("bufferline").setup{
 }
 
 local opt = { silent = true }
-vim.api.nvim_set_keymap('n', '<leader>1','<cmd>BufferLineGoToBuffer 1<cr>', opt)
-vim.api.nvim_set_keymap('n', '<leader>2','<cmd>BufferLineGoToBuffer 2<cr>', opt)
-vim.api.nvim_set_keymap('n', '<leader>3','<cmd>BufferLineGoToBuffer 3<cr>', opt)
-vim.api.nvim_set_keymap('n', '<leader>4','<cmd>BufferLineGoToBuffer 4<cr>', opt)
-vim.api.nvim_set_keymap('n', '<leader>5','<cmd>BufferLineGoToBuffer 5<cr>', opt)
+
+for i = 1,10,1
+do 
+  vim.api.nvim_set_keymap('n', '<leader>' .. i,'<cmd>BufferLineGoToBuffer' .. i .. '<cr>', opt)
+end
 
 require('Comment').setup()
 
