@@ -57,22 +57,20 @@ for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
-    flags = {
-        allow_incremental_sync = true,
-        debounce_text_changes = 150
-    }
   }
 end
 
-
-local extension_path = vim.env.HOME .. '/.vscode/extensions/vadimcn.vscode-lldb-1.7.0/'
-local codelldb_path = extension_path .. 'adapter/codelldb'
-local liblldb_path = extension_path .. 'lldb/lib/liblldb.dylib'
--- require('rust-tools').setup({
---     dap = {
---         adapter = require('rust-tools.dap').get_codelldb_adapter(codelldb_path, liblldb_path)
---     },
--- })
+require'lspconfig'.rescriptls.setup{
+  root_dir = function(fname)    
+    return os.getenv( "HOME" ) .. "/.local/share/nvim/mason/bin"
+  end,
+  cmd = {
+    'rescript-lsp',
+    '--stdio'
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 
 local luasnip = require 'luasnip'
@@ -120,4 +118,5 @@ cmp.setup {
 
 
 require"fidget".setup{}
-
+require("mason").setup()
+require("mason-lspconfig").setup()

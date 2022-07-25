@@ -12,8 +12,6 @@ require("telescope").setup({
   },
 })
 
-require('telescope').load_extension('coc')
-
 require'nvim-web-devicons'.setup {
   default = true;
 }

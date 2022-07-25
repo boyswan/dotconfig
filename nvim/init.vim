@@ -49,7 +49,6 @@ Plug 'j-hui/fidget.nvim'
 Plug 'vimpostor/vim-tpipeline' 
 Plug 'numToStr/Comment.nvim'
 Plug 'rescript-lang/vim-rescript'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nkrkv/nvim-treesitter-rescript'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'matze/vim-move'
@@ -57,7 +56,8 @@ Plug 'nvim-neo-tree/neo-tree.nvim', {'branch':  'v2.x'}
 Plug 'sindrets/diffview.nvim'
 Plug 'phaazon/hop.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'fannheyward/telescope-coc.nvim'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 call plug#end()
 
 let mapleader=" "

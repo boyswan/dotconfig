@@ -31,9 +31,6 @@ vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>f :Rescrip
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <s-k> :RescriptTypeHint<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> gd :RescriptJumpToDefinition<CR>]]
 vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>b :RescriptBuild<CR>]]
-vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fd :Telescope coc diagnostics<CR>]]
-vim.cmd[[autocmd FileType rescript nnoremap <silent> <buffer> <leader>fdw :Telescope coc workspace_diagnostics<CR>]]
-
 
 vim.cmd[[autocmd FileType css nnoremap <silent> <buffer> <leader>f :Prettier<CR>]]
 vim.cmd[[autocmd FileType javascript nnoremap <silent> <buffer> <leader>f :Prettier<CR>]]
