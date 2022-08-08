@@ -19,6 +19,7 @@ set number
 set cmdheight=0
 set noshowmode
 set completeopt=menuone,noinsert,noselect
+set clipboard=unnamedplus
 set shortmess+=c
 set laststatus=3
 set formatoptions-=cro
@@ -58,6 +59,7 @@ Plug 'phaazon/hop.nvim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'NoahTheDuke/vim-just'
 call plug#end()
 
 let mapleader=" "
