@@ -29,8 +29,12 @@ require("neo-tree").setup({
   enable_diagnostics = false,
   hide_root_node = true,
   enable_git_status = false,
+  use_default_mappings = false,
   window = {
-    width = 30
+    width = 30,
+    mappings = {
+      ["<cr>"] = "open"
+    }
   },
   filesystem = {
     filtered_items = {
