@@ -52,14 +52,11 @@ Plug 'numToStr/Comment.nvim'
 Plug 'rescript-lang/vim-rescript'
 Plug 'nkrkv/nvim-treesitter-rescript'
 Plug 'MunifTanjim/nui.nvim'
-Plug 'matze/vim-move'
-Plug 'nvim-neo-tree/neo-tree.nvim', {'branch':  'v2.x'}
 Plug 'sindrets/diffview.nvim'
-Plug 'phaazon/hop.nvim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'NoahTheDuke/vim-just'
+Plug 'tpope/vim-vinegar'
 call plug#end()
 
 let mapleader=" "
@@ -67,9 +64,7 @@ let g:netrw_liststyle = 3
 let g:netrw_banner = 0
 let g:tpipeline_cursormoved = 1
 let g:tpipeline_fillcentre = 1
-let g:move_key_modifier_visualmode = 'C'
 let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
-let loaded_netrwPlugin = 1
 
 colorscheme catppuccin
 

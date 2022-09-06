@@ -6,6 +6,7 @@ font:
   use_thin_strokes: true
   normal:
     family: MesloLGS NF
+    # family: Consolas NF
   offset:
     y: 6
 

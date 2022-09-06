@@ -20,9 +20,9 @@ vim.cmd[[nnoremap <silent> <leader>k <cmd>lua vim.diagnostic.open_float()<CR>]]
 
 keymap("n", "<leader>l", "<cmd>:bnext<cr>")
 keymap("n", "<leader>h", "<cmd>:bprev<cr>")
-keymap("n", "<leader>w", "<cmd>:bd<cr>")
-keymap("n", "<leader>e", "<cmd>NeoTreeRevealToggle<cr>")
--- keymap("n", "<leader>i", "<cmd>sp<cr><cr>")
+keymap("n", "<leader>q", "<cmd>:bd<cr>")
+keymap("n", "<leader>w", "<C-w>c")
+keymap("n", "<leader>e", "<cmd>Explore<cr><cr>")
 keymap("n", "<leader>o", "<cmd>vsp<cr><cr>")
 
 vim.cmd[[set omnifunc=rescript#Complete]]
