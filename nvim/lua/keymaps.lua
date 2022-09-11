@@ -12,6 +12,7 @@ keymap("n", "<leader>fl", "<cmd>lua require'telescope.builtin'.live_grep()<cr>")
 keymap("n", "<leader>fs", "<cmd>lua require'telescope.builtin'.git_status()<cr>")
 keymap("n", "<leader>fd", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>")
 
+keymap("n", "<leader>y", "\"_dP")
 keymap("i", "jk", "<esc>")
 keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
