@@ -18,7 +18,6 @@ keymap("n", "<leader>jk", "<cmd>:VMClear<cr>")
 
 vim.cmd[[nnoremap <silent> <leader>k <cmd>lua vim.diagnostic.open_float()<CR>]]
 
-
 keymap("n", "<leader>l", "<cmd>:bnext<cr>")
 keymap("n", "<leader>h", "<cmd>:bprev<cr>")
 keymap("n", "<leader>q", "<cmd>:bd<cr>")

@@ -19,56 +19,7 @@ end
 
 require('Comment').setup()
 
--- require('hop').setup { keys = 'etovxqpdygfblzhckisuran', jump_on_sole_occurrence = false }
--- vim.api.nvim_set_keymap('n', 'fa', '<cmd>HopChar2<cr>', opt)
-
-
-
--- require("neo-tree").setup({
---   close_if_last_window = false,
---   enable_diagnostics = false,
---   hide_root_node = true,
---   enable_git_status = false,
---   use_default_mappings = false,
---   window = {
---     width = 30,
---     mappings = {
---       ["<cr>"] = "open"
---     }
---   },
---   filesystem = {
---     filtered_items = {
---       show_hidden_count = false
---     }
---   },
---   default_component_configs = {
---     indent = {
---       indent_size = 2,
---       padding = 0,
---       with_markers = false
---     },
---     icon = {
---       folder_closed = " ",
---       folder_open = " ",
---       folder_empty = " ",
---     }
---   },
---   event_handlers = {
---
---     -- {
---     --   event = "file_opened",
---     --   handler = function(file_path)
---     --     require("neo-tree").close_all()
---     --   end
---     -- }
---
---   }
--- })
-
-vim.cmd[[hi NeoTreeRootName guifg=#98BBF5 gui=NONE]]
-vim.cmd[[hi NeoTreeNormal guibg=#181825]]
-vim.cmd[[hi NeoTreeNormalNC guibg=#181825]]
-vim.cmd[[hi NeoTreeSignColumn guibg=#181825]]
+vim.cmd[[hi LineNr guifg=#636872]]
 
 vim.cmd[[hi TSParameter gui=NONE]]
 vim.cmd[[hi TSNamespace gui=NONE]]
