@@ -2,6 +2,7 @@ local actions = require("telescope.actions")
 
 require("telescope").setup({
   defaults = {
+    file_ignore_patterns = {".git/", ".cache", "%.png", "%.lock"},
     initial_mode = 'insert',
     mappings = {
       n = {
