@@ -30,6 +30,8 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  
+  require("aerial").on_attach(client, bufnr)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -121,3 +123,4 @@ cmp.setup {
 require"fidget".setup{}
 require("mason").setup()
 require("mason-lspconfig").setup()
+

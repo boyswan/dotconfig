@@ -1,4 +1,6 @@
 local actions = require("telescope.actions")
+require("aerial").setup({})
+require('telescope').load_extension('aerial')
 
 require("telescope").setup({
   defaults = {
@@ -11,6 +13,12 @@ require("telescope").setup({
       },
     },
   },
+  extensions = {
+    aerial = {
+      -- Display symbols as <root>.<parent>.<symbol>
+      show_nesting = true
+    }
+  }
 })
 
 require'nvim-web-devicons'.setup {

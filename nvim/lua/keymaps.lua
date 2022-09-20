@@ -11,6 +11,7 @@ keymap("n", "<leader>fe", "<cmd>lua require'telescope.builtin'.find_files()<cr>"
 keymap("n", "<leader>fl", "<cmd>lua require'telescope.builtin'.live_grep()<cr>")
 keymap("n", "<leader>fs", "<cmd>lua require'telescope.builtin'.git_status()<cr>")
 keymap("n", "<leader>fd", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>")
+keymap("n", "<leader>fa", "<cmd>Telescope aerial<cr>")
 
 keymap("n", "<leader>y", "\"_dP")
 keymap("i", "jk", "<esc>")

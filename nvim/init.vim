@@ -57,6 +57,7 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'NoahTheDuke/vim-just'
 Plug 'tpope/vim-vinegar'
+Plug 'stevearc/aerial.nvim'
 call plug#end()
 
 let mapleader=" "
