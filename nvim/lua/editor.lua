@@ -5,7 +5,9 @@ require("bufferline").setup{
     },
     highlights = {
         buffer_selected = {
-            gui = "NONE"
+            underline = false,
+            undercurl = false,
+            italic = false,
         },
     },
 }
