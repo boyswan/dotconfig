@@ -57,7 +57,7 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'NoahTheDuke/vim-just'
 Plug 'tpope/vim-vinegar'
-Plug 'stevearc/aerial.nvim'
+Plug 'rafi/awesome-vim-colorschemes'
 call plug#end()
 
 let mapleader=" "
@@ -79,6 +79,7 @@ hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 highlight CursorLine guibg=#232333 ctermbg=234
+au BufNewFile,BufRead *.wgsl set filetype=wgsl
 
 lua << EOF
 require("lsp")

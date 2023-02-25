@@ -29,14 +29,17 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', '<space>f', vim.lsp.buf.format, bufopts)
   
-  require("aerial").on_attach(client, bufnr)
+  -- if client.resolved_capabilities.document_formatting then
+  --   vim.cmd("au BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+  -- end 
+
+  -- require("aerial").on_attach(client, bufnr)
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true;
-capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+-- capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
 vim.diagnostic.config({
   virtual_text = true,
@@ -55,13 +58,55 @@ vim.diagnostic.config({
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 
-local servers = {'rust_analyzer', 'tsserver'}
+local servers = {'tsserver'}
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,
   }
 end
+
+require'lspconfig'.rust_analyzer.setup{
+  -- root_dir = function(fname)    
+  --   return os.getenv( "HOME" ) .. "/.local/share/nvim/mason/bin"
+  -- end,
+  -- root_dir = function(fname)    
+  --   return os.getenv( "HOME" ) .. "/.rustup/toolchains/nightly-x86_64-apple-darwin/bin"
+  -- end,
+  -- cmd = {
+  --   'rust_analyzer',
+  -- },
+  cmd = {
+    'rustup',
+    'run',
+    'nightly',
+    'rust-analyzer',
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require'lspconfig'.wgsl_analyzer.setup{
+  root_dir = function(fname)    
+    return os.getenv( "HOME" ) .. "/.local/share/nvim/mason/bin"
+  end,
+  cmd = {
+    'wgsl_analyzer',
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
+
+require'lspconfig'.ocamllsp.setup{
+  root_dir = function(fname)    
+    return os.getenv( "HOME" ) .. "/.local/share/nvim/mason/bin"
+  end,
+  cmd = {
+    'ocamllsp',
+  },
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
 
 require'lspconfig'.rescriptls.setup{
   root_dir = function(fname)    
@@ -121,6 +166,13 @@ cmp.setup {
 
 
 require"fidget".setup{}
-require("mason").setup()
+require("mason").setup({
+ ui = {
+        keymaps = {
+            apply_language_filter = "<C-s>",
+        },
+    },
+  })
+
 require("mason-lspconfig").setup()
 

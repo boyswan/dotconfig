@@ -2,13 +2,17 @@ env:
   TERM: xterm-256color
 
 font:
-  size: 12.0
-  use_thin_strokes: true
+  size: 13.0
   normal:
-    family: MesloLGS NF
+    # family: VictorMono NF
+    family: Iosevka NF Medium
+    # family: MesloLGS NF
+    # family: JetBrains Mono Medium
+    # family: Liga SFMono Nerd Font
     # family: Consolas NF
   offset:
-    y: 6
+    y: 4
+    x: 0
 
 window:
   decorations: buttonless
@@ -16,8 +20,8 @@ window:
     x: 4
     y: 4 
 
-key_bindings:
-    - { key: Key3, mods: Alt, chars: '#' }
+# key_bindings:
+#     - { key: Key3, mods: Alt, chars: '#' }
 
 colors:
   # Default colors
